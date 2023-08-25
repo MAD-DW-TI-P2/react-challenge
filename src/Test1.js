@@ -7,11 +7,9 @@ const Page1 = () => {
     const onMousedown = () => {
       setCount(count + 1)
     }
+    window.addEventListener('mousedown', onMousedown)
 
   }, [])
-
-  window.removeEventListener('mousedown', onMousedown)
-  window.addEventListener('mousedown', onMousedown)
 
   return (
     <label>

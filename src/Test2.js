@@ -4,12 +4,9 @@ const Page2 = () => {
   const [items, setItems] = React.useState([1, 2, 3])
 
   const doChange = () => {
-    alert('hola')
-    console.log('1', items)
     items[0] = 3 
     items[1] = 3
     setItems(items)
-    console.log('2', items)
   }
 
   return (
